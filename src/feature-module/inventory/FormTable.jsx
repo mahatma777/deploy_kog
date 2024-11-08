@@ -1,25 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { all_routes } from "../../Router/all_routes";
+
 import {
-  ArrowLeft,
+
   // Calendar,
   ChevronDown,
-  ChevronUp,
-  Info,
-  LifeBuoy,
-  // List,
-  PlusCircle,
-  Trash2,
+
   
 } from "feather-icons-react/build/IconComponents";
 
-function FormTable({handleSubmit, handleChange, handClose, rest}) {
+function FormTable({ rest}) {
   const route = all_routes;
   return (
     <div>
         
-        <form onSubmit={handleSubmit}>
+        <form >
 
 <div className="modal fade" id="add-units-brand">
 <div className="modal-dialog modal-dialog-centered custom-modal-two modal-lg">
@@ -42,10 +38,10 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
         <div className="modal-body custom-modal-body">
           <div className="mb-3">
             <label className="form-label">Schoolname</label>
-            <input type="text" className="form-control"  onChange={handleChange}  value={rest.schoolname}/>
+            <input type="text" className="form-control"    value={rest.schoolname}/>
           </div>
 
-            <input type="hidden" className="form-control"  onChange={handleChange}  value={rest.id}/>
+            <input type="hidden" className="form-control"  value={rest.id}/>
     
 
 
@@ -60,7 +56,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                         <div className="col-lg-4 col-sm-6 col-12">
                           <div className="mb-3 add-product">
                             <label className="form-label">First Name</label>
-                            <input type="text" className="form-control"  required onChange={e=> setFn(e.target.value)}  defaultValue={rest.firstname}  />
+                            <input type="text" className="form-control"  required   defaultValue={rest.firstname}  />
                           </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 col-12">
@@ -69,7 +65,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                             <input
                               type="text"
                               className="form-control list"
-                              placeholder="Enter middlename(optional)"  onChange={e=> setMidname(e.target.value)} defaultValue={rest.middlename}
+                              placeholder="Enter middlename(optional)"   defaultValue={rest.middlename}
                             />
                           
                           </div>
@@ -95,7 +91,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                           <div className="col-lg-4 col-sm-6 col-12">
                             <div className="mb-3 add-product">
                               <label className="form-label">Nationality</label>
-              <select className="form-select" onChange={e=> setNationality(e.target.value)} >
+              <select className="form-select"  >
               <option value={rest.nationality}>{rest.nationality}</option>
                       
                                 <option value="Nigerian">Nigerian</option>
@@ -161,7 +157,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                               <input
                                 className="form-control list"
                               
-                                placeholder="ENTER NAME OF COMMUNITY OF RESIDENCE"  onChange={e=> setCNmae(e.target.value)}
+                                placeholder="ENTER NAME OF COMMUNITY OF RESIDENCE" 
                               />
                             </div>
                           </div>
@@ -179,7 +175,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                             <input
                               type="text"
                               className="form-control list"
-                              placeholder="Choose"  onChange={e=> setRAddress(e.target.value)}
+                              placeholder="Choose"  
                             />
                           </div>
                         </div>
@@ -189,7 +185,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                             <input
                               type="text"
                               className="form-control list"
-                              placeholder="Enter Present Class"  onChange={e=> setPClass(e.target.value)}
+                              placeholder="Enter Present Class" 
                             />
                           
                           </div>
@@ -201,7 +197,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                             <input
                               type="text"
                               className="form-control list"
-                              placeholder="Enter Present Class"  onChange={e=> setYAdmitted(e.target.value)}
+                              placeholder="Enter Present Class" 
                             />
                           
                           </div>
@@ -240,7 +236,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                           <div className="col-lg-6 col-sm-6 col-12">
                               <div className="input-blocks add-product">
                                 <label>Select Bank</label>
-                              <select className="form-select" onChange={e=> setBankdata(e.target.value)} >
+                              <select className="form-select"  >
               <option value="">Select Bank</option>
               <option value="Access Bank Plc">Access Bank Plc</option>
               <option value="Citibank Nigeria Limited">Citibank Nigeria Limited</option>
@@ -279,7 +275,7 @@ function FormTable({handleSubmit, handleChange, handClose, rest}) {
                             <div className="col-lg-6 col-sm-6 col-12">
                               <div className="input-blocks add-product">
                                 <label>Account No.</label>
-                                <input type="text" className="form-control" placeholder="Enter Account Number"  onChange={e=> setANo(e.target.value)} />
+                                <input type="text" className="form-control" placeholder="Enter Account Number"   />
                               </div>
                             </div>
                           

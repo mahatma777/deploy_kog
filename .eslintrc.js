@@ -31,5 +31,6 @@ module.exports = {
     "rules": {
         "react/react-in-jsx-scope": "off",
         "no-mixed-spaces-and-tabs": 0, // disable rule
+         "react/prop-types": "off",
     }
 }
