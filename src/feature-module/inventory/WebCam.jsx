@@ -1,10 +1,10 @@
-import React, {useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Webcam from "react-webcam";
 
-const WebcamComponent = () => <Webcam />;
+// const WebcamComponent = () => <Webcam />;
 
 const videoConstraints = {
     width: 300,
