@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import axios from "axios";
 import ImageWithBasePath from "../../../core/img/imagewithbasebath";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { all_routes } from "../../../Router/all_routes";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
 const Signin = () => {
   const route = all_routes;
@@ -15,7 +15,7 @@ const Signin = () => {
 
 
     
-    const  navigate = useNavigate 
+    // const  navigate = useNavigate 
     axios.defaults.withCredentials =true;
     const handleSumbit= (event) =>{
     event.preventDefault();

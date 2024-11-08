@@ -253,7 +253,6 @@ const handleDelete = (id) =>{
      
     // }
    
-    const [editSection , setEdittSection]= useState(false)
 
     // function handleDelete(id){
     //     axios.delete('http://localhost:8082/deletedat/'+id)
@@ -296,7 +295,7 @@ const handleDelete = (id) =>{
 
     const handleEdit = (data)=> {
         setFormDataEdit(data)
-        setEdittSection(true)
+    
     }
 
 
@@ -488,6 +487,7 @@ placeholder="Newest"
   
             </tbody>
                         </table>   */}
+                        <table onKeyDown={handleColumnFilter}></table>
                         <DataTable   
         columns={columns}
         data={filteredData}
@@ -609,11 +609,11 @@ Search{" "}
 </div>
 <EditLowStock />
 
-editSection && (
+
     <FormTable 
 // handleSubmit ={handleUpdate}
 // handleChange = {handleEditChange} 
-handClose ={()=>setEdittSection(false)}
+
 rest ={formDataEdit}
 
 />
@@ -623,7 +623,7 @@ rest ={formDataEdit}
 
 
 
-)
+
 
 </div>
 )

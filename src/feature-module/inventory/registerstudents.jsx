@@ -107,14 +107,14 @@ console.log("finger data", fingerdata);
 
 
 axios.defaults.withCredentials =true;
-const [name, setName] = useState();
+// const [name, setName] = useState();
 
 
 useEffect(()=>{
 axios.get('http://localhost:8082').
 then(res =>{
 if(res.data.valid){
-setName(res.data.username);
+// setName(res.data.username);
 // setSchoolcode(res.data.schoolcode);
 
 }
@@ -181,7 +181,7 @@ const [schlname, setCountries] = useState([]);
 
 const [scode, setStates] = useState([]);
 
- const [cities, setCities] = useState([]);
+//  const [cities, setCities] = useState([]);
 
 const handleCountryChange = async (event) => {
 const selectedCountry = event.target.value;
@@ -191,16 +191,16 @@ setValue(event.target.value);
 const response = await fetch(`http://localhost/other/fetch.php?schoolname=${selectedCountry}`);
 const data = await response.json();
 setStates(data);
-setCities([]);
+// setCities([]);
 };
 
 const handleStateChange = async (e) => {
-const selectedState = e.target.value;
+// const selectedState = e.target.value;
 
 setValueSc(e.target.value);
-const response = await fetch(`http://localhost/other/fetch.php?schoolcode=${selectedState}`);
-const data = await response.json();
-setCities(data);
+
+// const data = await response.json();
+// setCities(data);
 };
 
 useEffect(() => {
