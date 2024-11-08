@@ -3,7 +3,7 @@ import ImageWithBasePath from "../../../core/img/imagewithbasebath";
 import { Link } from "react-router-dom";
 import { all_routes } from "../../../Router/all_routes";
 import Dashboard from "../../dashboard/Dashboard";
-import { Routes, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 const SigninTwo = () => {
   const route = all_routes;
   return (

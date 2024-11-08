@@ -1,7 +1,7 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ImageWithBasePath from "../../../core/img/imagewithbasebath";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { all_routes } from "../../../Router/all_routes";
 
 import axios from "axios";
@@ -19,9 +19,9 @@ const handleSumbit= (event) =>{
 event.preventDefault();
 axios.post('http://localhost:8082/register', values)
 .then(res => {
-  if(res.data.Status === "Success"){
-    navigate('/sigin')
-  }
+if(res.data.Status === "Success"){
+alert("scces");
+}
   else {
     alert("Error");
   }
