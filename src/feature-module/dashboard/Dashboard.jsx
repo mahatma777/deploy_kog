@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import CountUp from "react-countup";
 import {
   File,
@@ -6,7 +6,7 @@ import {
   UserCheck,
 } from "feather-icons-react/build/IconComponents";
 import Chart from "react-apexcharts";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ImageWithBasePath from "../../core/img/imagewithbasebath";
 import { ArrowRight } from "react-feather";
 import { all_routes } from "../../Router/all_routes";
