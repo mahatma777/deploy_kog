@@ -5,6 +5,15 @@ import { Link } from "react-router-dom";
 import { all_routes } from "../../../Router/all_routes";
 // import { Route, Routes } from "react-router-dom";
 
+// export const getStaticProps = async () => {
+//   const url  = 'https://kogiagile.org/kogi_agile/backend/server/login';
+
+  
+//   return {
+//     props:{signindata:data}
+//   }
+// }
+
 const Signin = () => {
   const route = all_routes;
 
@@ -19,7 +28,7 @@ const Signin = () => {
     axios.defaults.withCredentials =true;
     const handleSumbit= (event) =>{
     event.preventDefault();
-    axios.post('https://kogiagile.org/kogi_agile/backend/server/login', values)
+    axios.post('https://kogiagile.org/kogi_agile/backend/server.js/login', values)
     .then(res => {
       if(res.data.Status === "Success"){
       
