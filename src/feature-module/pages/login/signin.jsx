@@ -53,7 +53,7 @@ window.location.href = 'admin-dashboard';
                 <div className="login-userheading">
                   <h3>Sign In</h3>
                   <h4>
-                   SUPER ADMIN DASHBAORD
+                   SUPER ADMIN DASHBAORD || KOGI 
                   </h4>
                 </div>
                 <div className="form-login mb-3">
