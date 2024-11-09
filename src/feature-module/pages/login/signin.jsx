@@ -28,7 +28,7 @@ const Signin = () => {
     axios.defaults.withCredentials =true;
     const handleSumbit= (event) =>{
     event.preventDefault();
-    axios.post('https://kogiagile.org/backend/server/login', values)
+    axios.post('https://centenaryrubber.com/agile/login', values)
     .then(res => {
       if(res.data.Status === "Success"){
       
@@ -62,7 +62,7 @@ window.location.href = 'admin-dashboard';
                 <div className="login-userheading">
                   <h3>Sign In</h3>
                   <h4>
-                   SUPER ADMIN DASHBAORD || KOGI 
+                   SUPER ADMIN DASHBAORD 
                   </h4>
                 </div>
                 <div className="form-login mb-3">
