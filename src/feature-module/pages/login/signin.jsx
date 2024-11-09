@@ -28,7 +28,7 @@ const Signin = () => {
     axios.defaults.withCredentials =true;
     const handleSumbit= (event) =>{
     event.preventDefault();
-    axios.post("https://kogiagile.org/login", values)
+    axios.post('https://kogiagile.org/backend/server/login', values)
     .then(res => {
       if(res.data.Status === "Success"){
       
