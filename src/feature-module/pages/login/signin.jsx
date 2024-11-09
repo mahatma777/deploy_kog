@@ -28,7 +28,7 @@ const Signin = () => {
     axios.defaults.withCredentials =true;
     const handleSumbit= (event) =>{
     event.preventDefault();
-    axios.post('https://centenaryrubber.com/agile/login', values)
+    axios.post('https://centenaryrubber.com/login', values)
     .then(res => {
       if(res.data.Status === "Success"){
       
